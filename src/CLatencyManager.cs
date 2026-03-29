@@ -177,7 +177,7 @@ namespace PRoConEvents
 
         public String GetPluginAuthor()
         {
-            return "Zaeed";
+            return "Zaeed (maintained by Prophet731)";
         }
 
         public String GetPluginWebsite()
