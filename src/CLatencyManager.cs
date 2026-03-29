@@ -18,13 +18,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Xml;
 
 using PRoCon.Core;
@@ -198,7 +192,6 @@ namespace PRoConEvents
 </form>
 </blockquote>
 
-
 <h2>Description</h2>
 <p>The Latency Manager plugin gives you two options for removing players that might be causing lag on your server.  The first option is the Country Kicking method.  This allows you to either list countries that are not allowed on your server, or specify only the countrys allowed. 
 
@@ -318,12 +311,10 @@ The second option is to kick based on the players Ping.  Two methods are avialab
             return lstReturn;
         }
 
-
         public void SetPluginVariable(String strVariable, String strValue)
         {
 
             Int32 iValue = 16;
-
 
             //COUNTRY VARIABLES
             if (strVariable.CompareTo("Action") == 0)
@@ -349,8 +340,6 @@ The second option is to kick based on the players Ping.  Two methods are avialab
             {
                 this.strCountryKickMessage = strValue;
             }
-
-
 
             // PING VARIABLES
             else if (strVariable.CompareTo("Enable high ping kick?") == 0 && Enum.IsDefined(typeof(enumBoolYesNo), strValue) == true)
@@ -844,7 +833,6 @@ The second option is to kick based on the players Ping.  Two methods are avialab
                 }
             }
         }
-
 
     }
 
